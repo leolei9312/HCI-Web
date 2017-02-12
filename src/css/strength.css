@@ -1,0 +1,339 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+
+#top ul{
+	/*text-align:right;/*导航右移*/
+
+height:70px;
+width:1260px;/*设置元素宽度为980px*/
+list-style-type:none;
+margin:0 auto;/*边界大小*/
+padding:0;
+overflow:auto;
+}
+
+#top ul li{
+	/*float:right;/*导航右移*/
+	float:left;
+	/*display:inline-block;*/
+}
+
+#top #wb a:hover{
+	width:105px;
+	height:38px;
+	line-height:38px;
+	border:0px solid red;
+	color:#DC7765;
+	background:#FFF;
+}
+
+#top #llmj a:hover{
+	width:105px;
+	height:38px;
+	line-height:38px;
+	border:0px solid red;
+	color:#DC7765;
+	background:#FFF;
+}
+
+#top #fb a:hover{
+	width:105px;
+	height:38px;
+	line-height:38px;
+	border:0px solid red;
+	color:#DC7765;
+	background:#FFF;
+}
+
+
+#top li a{
+	right:0px;
+width:105px;/*设置元素宽为80px*/
+height:70px;/*设置高度为28px*/
+line-height:38px;/*设置行距为28px，让文字在每行的中间位置*
+/*background:#1E7380;/*设置元素的背景为红色*/
+background:#009688;
+color:#FFF;/*文字颜色是白色*/
+margin:0 auto;
+alignment-adjust:middle;
+alignment-baseline:central
+font-size:16px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+}
+
+
+#navigator ul{
+width:1260px;/*设置元素宽度为980px*/
+/*border:1px solid #000;/*设置一个颜色为#000，宽度为1px的边框*/
+/*margin:0px auto 0px auto;/*也可以简写为margin:0 auto*/
+list-style-type:none;
+margin:0 auto;
+padding:0;
+overflow:hidden;
+}
+
+
+
+#navigator ul li{
+float:left;/*让li元素左浮动*/
+}
+
+
+#navigator ul li a{
+width:315px;/*设置元素宽为80px*/
+height:40px;/*设置高度为28px*/
+line-height:40px;/*设置行距为28px，让文字在每行的中间位置*/
+background:#00796B;/*设置元素的背景为红色*/
+color:#FFF;/*文字颜色是白色*/
+/*margin:5px 10px;*/
+font-size:20px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+}
+
+#navigator ul li a:hover{ /*这个大概的意思就是当鼠标放到这个a元素的上面时，这个a元素的样式就按下面的代码执行*/
+
+color:#9C9;
+background:#358B8C;
+}
+
+#navigator ul li ul{
+	z-index:999;/*设优先级，下拉菜单覆盖下部内容而不是往下推*/
+	position:absolute;
+	display:none;
+	/*visibility:hidden;*/
+}
+
+#navigator ul li:hover ul{
+	display:table-row-group;
+}
+
+
+#navigator ul li ul li{
+	float:none;
+	margin:0;
+	width:170px;
+}
+
+#navigator ul li.listshow ul{ display:block;}
+
+#leftmenu{
+	overflow:hidden;
+	width:200px;
+	height:1620px;
+	float:left;
+	position:relative;
+
+	background:#F4F5DB;
+
+	/*position:fixed;*/
+
+}
+#cate{
+
+	overflow: hidden;
+	float: none;
+	width: 200px;
+	height: 500px;
+	position: relative;
+	top: 0px;
+
+}
+#leftmenu{
+	position: relative;
+	left:83px;
+	background-color: #B2DFDB;
+}
+#leftmenu h1{
+	/*position: fixed;*/
+	position: relative;
+	text-align: center;
+	font-family:sans-serif;
+	color: #000;
+
+}
+#leftmenu ul li{
+	/*position: fixed;*/
+	float:left;
+	display:inline;
+	font-size:100%;
+	margin:10px;
+	background-color: #B2DFDB;
+
+}
+#leftmenu ul li a
+{
+	position:relative;
+	/*position: fixed;*/
+	background-color:#B2DFDB;
+	display:block;
+	width:200px;
+	right:50px;
+	height:50px;/*设置高度为28px*/
+	line-height:50px;/*设置行距为28px，让文字在每行的中间位置*/
+	alignment-adjust:middle;
+	alignment-baseline:central;
+	font-size:18px;;/*用12号字*/
+	display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+	text-align:center;/*让文本居中*/
+	text-decoration:none; /*去掉下划线*/
+
+}
+#video a{
+	text-decoration: none;
+}
+#video1 a{
+	text-decoration: none;
+}
+#run p1{
+	font-size: 25px;
+	color:white;
+}
+#leftmenu a:link {text-decoration:none; color: #000;}
+#leftmenu a:visited {text-decoration:none; color: #000;}
+#leftmenu a:hover {text-decoration:none; color: white;}
+#leftmenu a:active {text-decoration:none;background-color: #358B8C;}
+#breast a p1:hover {text-decoration:none; color: white;}
+#run a p1:hover {text-decoration:none; color: white;}
+#videofather{
+	position: relative;
+	left: 90px;
+}
+#video{
+	position:relative;
+	margin:20px;
+	left:60px;
+	width:660px;
+	float: left;
+	left:-2px;
+}
+#video img{
+	margin-bottom:15px;
+}
+#video p3{
+	font-size: 75px;
+	text-align: center;
+	position: relative;
+	left : 200px;
+	color: #9C9;
+}
+#video1{
+	position:relative;
+	margin:20px;
+	left:60px;
+	width:660px;
+	float: left;
+	left:-2px;
+}
+#video1 img{
+	margin-bottom:15px;
+}
+#video1 p3{
+	font-size: 75px;
+	text-align: center;
+	position: relative;
+	left : 200px;
+	color: #9C9;
+}
+#right {
+	overflow:hidden;
+	width:350px;
+	height:800px;
+
+	float: none;
+	/*float:right;*/
+	/*position:relative;
+	top: -809px;*/
+	background:#B2DFDB;
+	position: sticky;
+
+	left: 993px;
+	top: 0px;
+	z-index: 0;
+	/*float:left;*/
+}
+
+#right #calendar{
+	position:relative;
+	height:400px;
+}
+#right #add{
+	position:relative;
+	height:400px;
+}
+#addbut{
+	position: relative;
+	top: -50px;
+	background-color: #FFF;
+}
+#right button{
+	height:40px;
+  	width:195px;
+	font-size:16px;
+}
+#groupbut{
+	position: relative;
+	top: -50px;
+}
+
+#calendar div{
+	margin:15px;
+	position:relative;
+	float:left;
+	left:-20px;
+	width:350px;
+}
+#groupbut{
+	display: none;
+}
+
+
+#bottom{
+	position:relative;
+	width: 1260px;
+	height: 1px;
+	top: 0px;
+
+}
+#bottom ul{
+	/*text-align:right;/*导航右移*/
+height:125px;
+
+width:1260px;/*设置元素宽度为980px*/
+list-style-type:none;
+margin:0 auto;/*边界大小*/
+padding:0;
+/*overflow:auto;*/
+}
+
+#bottom ul li{
+	/*float:right;/*导航右移*/
+	float:right;
+	/*display:inline-block;*/
+	position: relative;
+	left: 83px;
+}
+
+
+
+#bottom li a{
+width:1260px;/*设置元素宽为80px*/
+height:25px;/*设置高度为28px*/
+line-height:20px;/*设置行距为28px，让文字在每行的中间位置*/
+background:#9C9;/*设置元素的背景为红色*/
+color:#FFF;/*文字颜色是白色*/
+/*margin:0 auto;*/
+alignment-adjust:middle;
+alignment-baseline:central
+font-size:16px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+/*position: relative;*/
+/*left: 100px;*/
+}
