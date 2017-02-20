@@ -9,19 +9,24 @@ $(document).ready(function()
     {
         $(this).animate({'opacity': 0.5, 'margin-top': '0px', 'box-shadow': '0px 0px 0px #000'}, {duration: 500});
     });
-    $("#strength").click(function(){
-        window.location.href="strength.html";
-    });
     $("#llmj").click(function(){
       window.location.href = "mainpage.html";
     });
     $("#xialastr").click(function(){
       window.location.href = "strength.html";
     });
+    $("#workout").click(function(){
+        window.location.href="workout.html";
+    });
     $("#profile").click(function(){
       window.location.href = "profile.html";
     });
-    $("#myprofile").click(function(){
-      window.location.href = "profilein.html";
-    });
+   
+    
 });
+
+/*var a = document.getElementsByTagName("username").value;
+var b = document.getElementsByTagName("password").value;
+
+alert(a);
+ */
