@@ -1,0 +1,342 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#top ul{
+	/*text-align:right;/*导航右移*/
+
+height:70px;
+width:1260px;/*设置元素宽度为980px*/
+list-style-type:none;
+margin:0 auto;/*边界大小*/
+padding:0;
+overflow:auto;
+font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+}
+
+#top ul li{
+	/*float:right;/*导航右移*/
+	float:left;
+	/*display:inline-block;*/
+}
+
+#top #wb a:hover{
+	width:105px;
+	height:38px;
+	line-height:38px;
+	border:0px solid red;
+	color:#DC7765;
+	background:#FFF;
+}
+
+#top #llmj a:hover{
+	width:105px;
+	height:38px;
+	line-height:38px;
+	border:0px solid red;
+	color:#DC7765;
+	background:#FFF;
+}
+
+#top #fb a:hover{
+	width:105px;
+	height:38px;
+	line-height:38px;
+	border:0px solid red;
+	color:#DC7765;
+	background:#FFF;
+}
+
+
+#top li a{
+	right:0px;
+width:105px;/*设置元素宽为80px*/
+height:70px;/*设置高度为28px*/
+line-height:38px;/*设置行距为28px，让文字在每行的中间位置*
+/*background:#1E7380;/*设置元素的背景为红色*/
+background:#009688;
+color:#FFF;/*文字颜色是白色*/
+margin:0 auto;
+alignment-adjust:middle;
+alignment-baseline:central
+font-size:16px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+}
+
+
+#navigator ul{
+width:1260px;/*设置元素宽度为980px*/
+/*border:1px solid #000;/*设置一个颜色为#000，宽度为1px的边框*/
+/*margin:0px auto 0px auto;/*也可以简写为margin:0 auto*/
+list-style-type:none;
+margin:0 auto;
+padding:0;
+overflow:hidden;
+font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+}
+
+
+
+#navigator ul li{
+float:left;/*让li元素左浮动*/
+}
+
+
+#navigator ul li a{
+width:315px;/*设置元素宽为80px*/
+height:40px;/*设置高度为28px*/
+line-height:40px;/*设置行距为28px，让文字在每行的中间位置*/
+background:#00796B;/*设置元素的背景为红色*/
+color:#FFF;/*文字颜色是白色*/
+/*margin:5px 10px;*/
+font-size:20px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+}
+
+#navigator ul li a:hover{ /*这个大概的意思就是当鼠标放到这个a元素的上面时，这个a元素的样式就按下面的代码执行*/
+/*width:308px;
+height:38px;
+line-height:40px;
+border:1px solid black;*/
+color:#9C9;
+background:#358B8C;
+}
+
+#navigator ul li ul{
+	z-index:999;/*设优先级，下拉菜单覆盖下部内容而不是往下推*/
+	position:absolute;
+	display:none;
+	/*visibility:hidden;*/
+}
+
+#navigator ul li:hover ul{
+	display:table-row-group;
+}
+
+
+#navigator ul li ul li{
+	float:none;
+	margin:0;
+	width:170px;
+}
+
+#navigator ul li.listshow ul{ display:block;}
+
+
+
+
+
+/*//////////////////////////////////////////////*/
+#container_1{
+	 text-align: left;
+	 margin: 0;
+	 padding: 0;
+	 margin: 0 auto;
+	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+}
+
+a.hiddenanchor{
+	display: none;
+}
+
+#wrapper{
+	width: 60%;
+	right: 0px;
+	min-height: 560px;
+	margin: 0px auto;
+	width: 500px;
+	position: relative;
+
+}
+
+#wrapper a{
+	color: rgb(95, 155, 198);
+	text-decoration: underline;
+}
+#wrapper h1{
+	font-size: 48px;
+	color: rgb(6, 106, 117);
+	padding: 2px 0 10px 0;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+
+#wrapper p{
+	margin-bottom:15px;
+}
+#wrapper p:first-child{
+	margin: 0px;
+}
+#wrapper label{
+	color: rgb(64, 92, 96);
+	position: relative;
+}
+
+input {
+  outline: none;
+}
+
+/* all the input except submit and checkbox */
+#wrapper input:not([type="checkbox"]){
+	width: 92%;
+	margin-top: 4px;
+	padding: 10px 5px 10px 32px;
+	border: 1px solid rgb(178, 178, 178);
+	box-sizing : content-box;
+	border-radius: 3px;
+	box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	transition: all 0.2s linear;
+}
+/*#wrapper input:not([type="checkbox"]):active,
+#wrapper input:not([type="checkbox"]):focus{
+	border: 1px solid rgba(91, 90, 90, 0.7);
+	background: rgba(238, 236, 240, 0.2);
+	box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+}
+*/
+/*login or sign up buttons */
+#wrapper p.button input{
+	width: 97%;
+	background: #009688;
+	padding: 8px 5px;
+	color: #fff;
+	font-size: 24px;
+	border: 1px solid rgb(28, 108, 122);
+	margin-bottom: 10px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 3px;
+	box-shadow:0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset;
+
+}
+#wrapper p.button input:hover{
+	background: rgb(0, 168, 150);
+}
+#wrapper p.button input:active,
+#wrapper p.button input:focus{
+	background: #009688;
+	position: relative;
+	top: 1px;
+	border: 1px solid rgb(12, 76, 87);
+	box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+p.change_link{
+	position: relative;
+	color: rgb(127, 124, 124);
+	left: 13px;
+	height: 20px;
+	width: 490px;
+	font-size: 14px	;
+	text-align: right;
+}
+/** forms **/
+#register,
+#login{
+	position: absolute;
+	right: -40px;
+	top: 20px;
+	width: 120%;
+	padding: 18px 6% 60px 6%;
+	margin: 0 0 35px 0;
+	background: rgb(247, 247, 247);
+	box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	border-radius: 5px;
+}
+#register{
+	z-index: 21;
+	opacity: 0;
+}
+#login{
+	z-index: 22;
+}
+
+#toregister:target ~ #wrapper #register,
+#tologin:target ~ #wrapper #login{
+	z-index: 22;
+	animation-name: fadeIn;
+	animation-delay: .1s;
+}
+#toregister:target ~ #wrapper #login,
+#tologin:target ~ #wrapper #register{
+	animation-name: fadeOut;
+}
+.animate{
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+}
+
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+}
+
+.fadeOut {
+	animation-name: fadeOut;
+}
+
+/*//////////////////////////////////////////////*/
+
+#bottom{
+	position: relative;
+	bottom: 0px;
+
+}
+
+#bottom ul{
+	/*text-align:right;/*导航右移*/
+
+height:125px;
+width:1260px;/*设置元素宽度为980px*/
+list-style-type:none;
+margin:0 auto;/*边界大小*/
+padding:0;
+overflow:auto;
+}
+
+#bottom ul li{
+	/*float:right;/*导航右移*/
+	float:left;
+	/*display:inline-block;*/
+}
+
+
+
+#bottom li a{
+	right:0px;
+width:1260px;/*设置元素宽为80px*/
+height:25px;/*设置高度为28px*/
+line-height:20px;/*设置行距为28px，让文字在每行的中间位置*/
+background:#9C9;/*设置元素的背景为红色*/
+color:#FFF;/*文字颜色是白色*/
+margin:0 auto;
+alignment-adjust:middle;
+alignment-baseline:central
+font-size:16px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+}
