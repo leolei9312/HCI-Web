@@ -1,0 +1,443 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#top ul{
+	/*text-align:right;/*导航右移*/
+
+height:70px;
+width:1260px;/*设置元素宽度为980px*/
+list-style-type:none;
+margin:0 auto;/*边界大小*/
+padding:0;
+overflow:auto;
+font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+}
+
+#top ul li{
+	/*float:right;/*导航右移*/
+	float:left;
+	/*display:inline-block;*/
+}
+
+#top #wb a:hover{
+	width:105px;
+	height:38px;
+	line-height:38px;
+	border:0px solid red;
+	color:#DC7765;
+	background:#FFF;
+}
+
+#top #llmj a:hover{
+	width:105px;
+	height:38px;
+	line-height:38px;
+	border:0px solid red;
+	color:#DC7765;
+	background:#FFF;
+}
+
+#top #fb a:hover{
+	width:105px;
+	height:38px;
+	line-height:38px;
+	border:0px solid red;
+	color:#DC7765;
+	background:#FFF;
+}
+
+
+#top li a{
+	right:0px;
+width:105px;/*设置元素宽为80px*/
+height:70px;/*设置高度为28px*/
+line-height:38px;/*设置行距为28px，让文字在每行的中间位置*
+/*background:#1E7380;/*设置元素的背景为红色*/
+background:#009688;
+color:#FFF;/*文字颜色是白色*/
+margin:0 auto;
+alignment-adjust:middle;
+alignment-baseline:central
+font-size:16px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+}
+
+
+#navigator ul{
+width:1260px;/*设置元素宽度为980px*/
+/*border:1px solid #000;/*设置一个颜色为#000，宽度为1px的边框*/
+/*margin:0px auto 0px auto;/*也可以简写为margin:0 auto*/
+list-style-type:none;
+margin:0 auto;
+padding:0;
+overflow:hidden;
+font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+}
+
+
+
+#navigator ul li{
+float:left;/*让li元素左浮动*/
+}
+
+
+#navigator ul li a{
+width:315px;/*设置元素宽为80px*/
+height:40px;/*设置高度为28px*/
+line-height:40px;/*设置行距为28px，让文字在每行的中间位置*/
+background:#00796B;/*设置元素的背景为红色*/
+color:#FFF;/*文字颜色是白色*/
+/*margin:5px 10px;*/
+font-size:20px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+}
+
+#navigator ul li a:hover{ /*这个大概的意思就是当鼠标放到这个a元素的上面时，这个a元素的样式就按下面的代码执行*/
+/*width:308px;
+height:38px;
+line-height:40px;
+border:1px solid black;*/
+color:#9C9;
+background:#358B8C;
+}
+
+#navigator ul li ul{
+	z-index:999;/*设优先级，下拉菜单覆盖下部内容而不是往下推*/
+	position:absolute;
+	display:none;
+	/*visibility:hidden;*/
+}
+
+#navigator ul li:hover ul{
+	display:table-row-group;
+}
+
+
+#navigator ul li ul li{
+	float:none;
+	margin:0;
+	width:170px;
+}
+
+#navigator ul li.listshow ul{ display:block;}
+
+
+
+
+
+/*//////////////////////////////////////////////*/
+#profile-pic {
+    position: absolute;
+    top: 3%;
+    left: 33.5%;
+}
+
+.container{
+	width: 100%;
+	position: relative;
+}
+
+
+
+.tabs {
+    position: relative;
+	margin: 40px auto;
+	width: 750px;
+	left:-200px;
+	top: -30px;
+}
+
+.tabs input {
+	position: absolute;
+	z-index: 1000;
+	width: 240px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+	cursor: pointer;
+}
+.tabs input#tab-2{
+	left: 240px;
+}
+.tabs input#tab-3{
+	left: 480px;
+}
+
+
+.tabs label {
+	background: #5ba4a4;
+	background: -moz-linear-gradient(top, #5ba4a4 0%, #4e8c8a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5ba4a4), color-stop(100%,#4e8c8a));
+	background: -webkit-linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
+	background: -o-linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
+	background: -ms-linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
+	background: linear-gradient(top, #5ba4a4 0%,#4e8c8a 100%);
+	font-size: 15px;
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+	padding: 0 20px;
+    float: left;
+	display: block;
+	width: 240px;
+	color: #385c5b;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+    border-radius: 3px 3px 0 0;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1), -2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tabs label:after {
+    content: '';
+	background: #fff;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	display: block;
+}
+
+.tabs input:hover + label {
+	background: #5ba4a4;
+}
+
+.tabs label:first-of-type {
+    z-index: 4;
+    box-shadow: 2px 0 2px rgba(0,0,0,0.1);
+}
+
+.tab-label-2 {
+    z-index: 3;
+}
+
+.tab-label-3 {
+    z-index: 2;
+}
+
+
+
+.tabs input:checked + label {
+    background: #fff;
+	z-index: 6;
+    animation: page 0.2s linear;
+}
+
+.content {
+    background: #fff;
+	position: relative;
+    width: 96%;
+	height: 320px;
+	z-index: 5;
+	overflow: hidden;
+    box-shadow: 0 -2px 3px -2px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.1);
+    border-radius: 0 3px 3px 3px;
+}
+
+
+.content div {
+    position: absolute;
+	top: -10px;
+	width: 100%;
+	padding: 10px 40px;
+	z-index: 1;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+
+.content-1, .content-2,.content-3 {
+	transform: translateX(-250px);
+}
+
+
+.tabs input.tab-selector-1:checked ~ .content .content-1,
+.tabs input.tab-selector-2:checked ~ .content .content-2,
+.tabs input.tab-selector-3:checked ~ .content .content-3 {
+	transform: translateX(0px);
+	z-index: 100;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    transition: all ease-out 0.2s 0.1s;
+}
+
+.content div h2{
+	color: #385c5b;
+	text-align: center;
+	font-size: 20px;
+}
+
+.content div h3{
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+
+@keyframes "page" {
+ 0% {
+    left: 0;
+ }
+ 50% {
+    left: 10px;
+ }
+ 100% {
+    left: 0;
+ }
+
+}
+
+@-moz-keyframes page {
+ 0% {
+   left: 0;
+ }
+ 50% {
+   left: 10px;
+ }
+ 100% {
+   left: 0;
+ }
+
+}
+
+@-webkit-keyframes "page" {
+ 0% {
+   left: 0;
+ }
+ 50% {
+   left: 10px;
+ }
+ 100% {
+   left: 0;
+ }
+
+}
+
+@-ms-keyframes "page" {
+ 0% {
+   left: 0;
+ }
+ 50% {
+   left: 10px;
+ }
+ 100% {
+   left: 0;
+ }
+
+}
+
+@-o-keyframes "page" {
+ 0% {
+   left: 0;
+ }
+ 50% {
+   left: 10px;
+ }
+ 100% {
+   left: 0;
+ }
+
+}
+
+
+#container_1{
+	 text-align: left;
+	 margin: 0;
+	 padding: 0;
+	 margin: 0 auto;
+	 font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+}
+
+
+
+#wrapper{
+	width: 60%;
+	right: 0px;
+	min-height: 450px;	
+	margin: 0px auto;	
+	width: 500px;
+	position: relative;	
+	
+}
+
+#wrapper h1{
+	position: relative;
+	top: 25px;
+	font-size: 20px;
+	color: rgb(6, 106, 117);
+	padding: 2px 0 10px 0;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+
+
+/** forms **/
+#form{
+	position: absolute;
+	right: -145px;
+	top: 100px;
+	width: 160%;
+	height: 540px;	
+	padding: 18px 6% 60px 6%;
+	margin: 0 0 35px 0;
+	background: rgb(247, 247, 247);
+	box-shadow: 0pt 2px 5px rgba(105, 108, 109,  0.7),	0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+	border-radius: 5px;
+}
+
+/*//////////////////////////////////////////////*/
+
+#bottom{
+	position: relative;
+
+
+}
+
+#bottom ul{
+	/*text-align:right;/*导航右移*/
+position: relative;
+top:230px;
+height:125px;
+width:1260px;/*设置元素宽度为980px*/
+list-style-type:none;
+margin:0 auto;/*边界大小*/
+padding:0;
+overflow:auto;
+}
+
+#bottom ul li{
+	/*float:right;/*导航右移*/
+	float:left;
+	/*display:inline-block;*/
+}
+
+
+
+#bottom li a{
+	right:0px;
+width:1260px;/*设置元素宽为80px*/
+height:25px;/*设置高度为28px*/
+line-height:20px;/*设置行距为28px，让文字在每行的中间位置*/
+background:#9C9;/*设置元素的背景为红色*/
+color:#FFF;/*文字颜色是白色*/
+margin:0 auto;
+alignment-adjust:middle;
+alignment-baseline:central
+font-size:16px;/*用12号字*/
+display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+text-align:center;/*让文本居中*/
+text-decoration:none; /*去掉下划线*/
+}

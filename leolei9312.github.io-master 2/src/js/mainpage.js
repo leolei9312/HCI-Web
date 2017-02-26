@@ -1,0 +1,11 @@
+$(document).ready(function(){
+  $("#strength").click(function(){
+      window.location.href="workout.html";
+  });
+  $("#store").click(function(){
+      window.location.href="store.html";
+  });
+  $("#profile").click(function(){
+      window.location.href="profile.html";
+  });
+});
