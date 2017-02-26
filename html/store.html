@@ -1,15 +1,15 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="../src/css/workout.css" rel="stylesheet" type="text/css" />
+<link href="../src/css/store.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <!--<link href="slides.css" rel="stylesheet" type="text/css"/>-->
 <title>LLJM | Welcome</title>
 
 <script src = "../src/js/min.js"></script>
-<script src = "../src/js/workout.js"></script>
-<script src = "../src/js/profile.js"></script>
+<script src = "../src/js/store.js"></script>
+
 </head>
 <body>
 
@@ -41,7 +41,7 @@
  <div id="navigator">
 
  <ul>
-  <li><a href="#"><font color=#BDBDBD>WORKOUT</font></a>
+  <li><a href="workout.html">WORKOUT</font></a>
    <ul>
    <li id="xialastr"><a href="#">STRENGTH</a></li>
    <li><a href="#">YOGA</a></li>
@@ -49,6 +49,7 @@
    <li><a href="#">STRETCHING</a></li>
  </ul>
    </li>
+
 <li><a href="#">DIET</a>
 <ul >
 <li><a href="#">Page1</a></li>
@@ -57,7 +58,7 @@
 </ul>
 </li>
 
-<li><a href="store.html">STORE</font></a>
+<li><a href="store.html"><font color=#BDBDBD>STORE</font></a>
    <ul>
    <li id="contact"><a href="equipment.html">Equipment</a></li>
    <li><a href="#">Clothes</a></li>
@@ -66,21 +67,38 @@
    <li><a href="#">Accessories</a></li>
  </ul>
    </li>
-   
-<li id="profile"><a href="#">PROFILE</a></li>
+
+<li id="profile"><a href="#">PROFILE</a>
+    <!-- <ul>
+        <li><a href="profilein.html">MyProfile</a></li>
+    </ul> -->
+</li>
 
 </ul>
 </div>
-<div id="pictures">
-  <img id="strength" class="test" src="../src/picture/STRENGTH.jpg" width="550" height="350"></img>
-  <img id="yoga" class="test" src="../src/picture/YOGA.jpg" width="550" height="350"></img>
-  <img id="cardio" class="test" src="../src/picture/CARDIO.jpg" width="550" height="350"></img>
-  <img id="stretch" class="test" src="../src/picture/stretching.jpg" width="550" height="350"></img>
 
+<div id="leftmenu">
+  <div id="cate">
+  <h1>Category</h1>
+  <p1>___________________________________________________</p1>
+ <ul>
+
+  <li id="equipment" class="test"><a><p1>Equipment</p1></a></li>
+  <li id="clothes" class="test"><a href="#about"><p1>Clothes</p1></a></li>
+  <li class="test"><a href="#news">Trousers</a></li>
+  <li class="test"><a href="#">Shoes</a></li>
+  <li class="test"><a href="#">Accessories</a><li>
+
+ </ul>
+  </div>
 </div>
 
-
-
+<div id="search" class="input-group col-md-3" style="margin-top:30px positon:relative">  
+       <input id="inword" type="text" class="form-control" placeholder="Input the things you want to find" / >  
+            <span class="input-group-btn">  
+               <button id="b-search" class="btn btn-info btn-search">Search</button>  
+            </span>  
+ </div>  
 
 
 
@@ -95,7 +113,7 @@
 
 </ul>
 </div>
-
+</div>
 
 
 </body>
