@@ -60,6 +60,9 @@ $(document).ready(function()
       if(islogin) window.location.href = "profilein.html";
       else window.location.href = "profile.html";
    });
+   $("#contact").click(function(){
+      window.location.href = "equipment.html";
+    });
 });
 
 /*var a = document.getElementsByTagName("username").value;

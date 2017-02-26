@@ -21,7 +21,9 @@ $(document).ready(function()
     $("#profile").click(function(){
       window.location.href = "profile.html";
     });
-   
+    $("#contact").click(function(){
+      window.location.href = "equipment.html";
+    });
     
 });
 
