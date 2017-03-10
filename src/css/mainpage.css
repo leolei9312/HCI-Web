@@ -70,7 +70,7 @@ text-decoration:none; /*去掉下划线*/
 	margin: auto;
 	text-align: center;
 	position: relative;
-	background-image: url("../src/picture/workout.gif");
+	background-image: url("../picture/workout.gif");
 
 }
 #pic h1{
