@@ -134,7 +134,7 @@ background:#358B8C;
 #leftmenu{
 	overflow:hidden;
 	width:250px;
-	height:800px;
+	height:690px;
 	margin-left:-6.3%;
 	float:left;
 	position:relative;
@@ -155,7 +155,7 @@ background:#358B8C;
 }
 #leftmenu{
 	position: relative;
-	left:90px;
+	left:181px;
 	background-color: #B2DFDB;
 }
 #leftmenu h1{
@@ -207,10 +207,11 @@ background:#358B8C;
 
 #bottom{
 	position: relative;
-	bottom: 100px;
-	height: 0px;
-	
-	
+	top: 560px;
+	left: -80px;
+	/*height: 0px;*/
+
+
 
 }
 

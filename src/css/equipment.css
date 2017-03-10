@@ -138,7 +138,7 @@ background:#358B8C;
 	margin-left:-6.3%;
 	float:left;
 	position:relative;
- 
+
 	background:#F4F5DB;
 
 	/*position:fixed;*/
@@ -156,7 +156,7 @@ background:#358B8C;
 }
 #leftmenu{
 	position: relative;
-	left:90px;
+	left:181px;
 	background-color: #B2DFDB;
 }
 #leftmenu h1{
@@ -205,7 +205,7 @@ background:#358B8C;
   width: 1000;
   height: 800px;
 	position: relative;
-	left: 240px;
+	left: 300px;
 }
 #eq1{
   position: absolute;
